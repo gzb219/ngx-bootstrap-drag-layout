@@ -18,22 +18,8 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
-      "styles": [
-        "styles.css",
-        "../src/assets/css/bootstrap-combined.min.css",
-        "../src/assets/css/layoutit.css"
-      ],
-      "scripts": [
-        "../src/assets/js/html5shiv.js",
-        "../src/assets/ckeditor/ckeditor.js",
-        "../src/assets/ckeditor/config.js",
-        "../src/assets/js/jquery-2.0.0.min.js",
-        "../src/assets/js/jquery-ui.js",
-        "../src/assets/js/jquery.htmlClean.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.min.js",        
-        "../src/assets/js/jquery.ui.touch-punch.min.js",
-        "../src/assets/js/scripts.js"        
-      ],
+      "styles": [],
+      "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
