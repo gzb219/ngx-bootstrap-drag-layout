@@ -42,9 +42,9 @@ export class DragComponent implements OnInit {
       if (Number(element.width) !== 0 && !isNaN(Number(element.width))) {
         str += '<div class=\'span' + element.width + ' column ui-sortable\'>';
       }
-      element.cptList.forEach(element => {
+      element.cptList.forEach(n => {
 
-        const li = $('#elmComponents').find('app-' + element).parents('.ui-draggable').html();
+        const li = $('#elmComponents').find('app-' + n).parents('.ui-draggable').html();
         str += '<div class=\'box box-element ui-draggable\'>' + li + '</div>';
       });
       str += '</div>';
@@ -57,9 +57,9 @@ export class DragComponent implements OnInit {
       const row = {width: '0', cptList: []};
       row.width = element.className.split('span')[1].split('')[0];
 
-      $(element).find('.ui-draggable').each((index, element) => {
+      $(element).find('.ui-draggable').each((i, n) => {
 
-        const strElement = $(element).find('.view').html().split('-')[1].split('_')[0];
+        const strElement = $(n).find('.view').html().split('-')[1].split('_')[0];
 
         row.cptList.push(strElement.substring(0, strElement.length - 1));
       });

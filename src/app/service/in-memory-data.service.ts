@@ -22,7 +22,7 @@ export class InMemoryDataService implements InMemoryDbService {
         ]
       },
       {
-        'width': '4',
+        'width': '4', 
         'cptList': [
           'drag7',
           'drag8',
