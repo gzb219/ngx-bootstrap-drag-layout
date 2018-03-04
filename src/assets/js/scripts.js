@@ -302,7 +302,8 @@ $(document).ready(function () {
 		contentsCss: ['css/bootstrap-combined.min.css'],
 		allowedContent: true
 	});
-	$(body).css("min-height", $(window).height() - 90);
+	let body = $("body");
+	body.css("min-height", $(window).height() - 90);
   layCon.css("min-height", $(window).height() - 160);
 
   let sidebar = $(".sidebar-nav");
@@ -387,8 +388,8 @@ $(document).ready(function () {
 		return false
 	});
 	$("#edit").click(function () {
-		$(body).removeClass("devpreview sourcepreview");
-		$(body).addClass("edit");
+		body.removeClass("devpreview sourcepreview");
+		body.addClass("edit");
 		removeMenuClasses();
 		$(this).addClass("active");
 		return false
@@ -398,15 +399,15 @@ $(document).ready(function () {
 		clearDemo()
 	});
 	$("#devpreview").click(function () {
-		$(body).removeClass("edit sourcepreview");
-		$(body).addClass("devpreview");
+		body.removeClass("edit sourcepreview");
+		body.addClass("devpreview");
 		removeMenuClasses();
 		$(this).addClass("active");
 		return false
 	});
 	$("#sourcepreview").click(function () {
-		$(body).removeClass("edit");
-		$(body).addClass("devpreview sourcepreview");
+		body.removeClass("edit");
+		body.addClass("devpreview sourcepreview");
 		removeMenuClasses();
 		$(this).addClass("active");
 		return false
